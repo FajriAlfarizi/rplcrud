@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+<div class="card" style="width: 18rem;">
+    <img src="{% static 'images/1.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Welcome to myapp</h5>
+      <p class="card-text">Aplikasi ini dibuat dengan segenap jiwa dan raga saya.</p>
+      <a href="{% url 'aboutus' %}" class="btn btn-primary">About Us</a>
+    </div>
+  </div>
+{% endblock %}

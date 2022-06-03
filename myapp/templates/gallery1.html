@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>About Us</title>
+</head>
+<body>
+    <h1 align="center">Welcome to MYAPP</h1>  
+    <hr/>
+    <center>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <li class="nav-item">
+                <a class="nav-link"  href="{% url 'beranda' %}">Home</a>
+                </li>
+            </div>
+            </nav>
+    </center>
+    <hr/>
+<h3 align="center">Gallery </h3>
+<marquee direction="up " scrolldelay="50">
+{% load static %}
+<img src="{% static 'images/1.jpg' %}" /> <br/><br/>
+<img src="{% static 'images/2.jpg' %}" /> <br/><br/>
+<img src="{% static 'images/3.jpg' %}" /> <br/><br/>
+</marquee>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+<h3>Daftar Pinjam</h3>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">No</th>
+        <th scope="col">Tanggal Pinjam</th>
+        <th scope="col">Jumlah</th>
+        <th scope="col">Tanggal Kembali</th>
+        <th scope="col">Peminjam</th>
+        <th scope="col">Kode Buku</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        {% for data in Pinjam_list %}
+        <tr>
+            <td>{{ forloop.counter }}</td>
+            <td>{{ data.tanggal_pinjam }}</td>
+            <td>{{ data.jumlah_pinjam }}</td>
+            <td>{{ data.tanggal_kembali }}</td>
+            <td>{{ data.id_anggota }}</td>
+            <td>{{ data.kode_buku }}</td>
+
+        </tr>
+        {% endfor %}
+     
+    </tbody>
+  </table>
+{% endblock %}

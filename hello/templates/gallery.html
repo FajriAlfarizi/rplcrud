@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>About Us</title>
+</head>
+<body>
+    <h1 align="center">Welcome to MYAPP</h1>  
+    <hr/>
+    <center>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <a href="{% 'beranda' %}" type="button" class="btn btn-outline-primary">Home</a>
+            <a href="#" type="button" class="btn btn-outline-primary">Left</a>
+            <a href="#" type="button" class="btn btn-outline-primary">Left</a>
+          </div>
+    </center>
+    <hr/>
+<h3 align="center">Gallery </h3>
+<marquee direction="up " scrolldelay="200">
+{% load static %}
+<img src="{% static 'images/1.jpg' %}" /> <br/><br/>
+<img src="{% static 'images/2.jpg' %}" /> <br/><br/>
+<img src="{% static 'images/3.jpg' %}" /> <br/><br/>
+</marquee>
+</body>
+</html>
